@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            overflow: hidden;
+        }
+
+        .circle {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        #center {
+            background: black;
+        }
+
+        .side-circle {
+            background: rgb(116, 0, 0);
+            top: 30%;
+            transform: translateY(-50%);
+        }
+
+        #left {
+            left: 10%;
+        }
+
+        #right {
+            right: 10%;
+        }
+
+        .blink-green {
+            animation: blink 0.6s infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                background: #00ff00a8;
+            }
+
+            50% {
+                background: #009900;
+            }
+
+            100% {
+                background: #00ff00a8;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <title>Antisaccade</title>
+    <div class="circle" id="center"></div>
+    <div class="circle side-circle" id="left"></div>
+    <div class="circle side-circle" id="right"></div>
+
+    <script>
+        const f = () => {
+            // 随机延迟时间（1-3秒）
+            const delay = Math.random() * 2000 + 1000;
+
+            // 随机选择左右目标
+            const target = Math.random() > 0.5 ?
+                document.getElementById('left') :
+                document.getElementById('right');
+
+            setTimeout(() => {
+                target.classList.add('blink-green');
+            }, delay);
+
+            setTimeout(() => {
+                target.classList.remove('blink-green');
+                f();
+            }, delay + 2000);
+        }
+        f();
+    </script>
+</body>
+
+</html>
