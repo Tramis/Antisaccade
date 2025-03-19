@@ -1,5 +1,14 @@
 # Antisaccade
 
+
+## Usage
+
+盯着中间的黑圈，一旦两个红圈之一变绿，立刻扫向另一个没变的红圈
+
+Look at the black circle at center. Once one of two red circles turns green, glance to the another red circle immediately.
+
+## Explain
+
 **Antisaccade**（反向扫视/反向眼动）是认知神经科学和心理学中用于研究 **抑制控制**（inhibitory control）和 **执行功能**（executive function）的经典实验任务。以下是详细解释：
 
 ---
