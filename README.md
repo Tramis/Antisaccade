@@ -3,9 +3,13 @@
 
 ## Usage
 
-盯着中间的黑圈，一旦两个红圈之一变绿，立刻扫向另一个没变的红圈
+找一个尽可能大的屏幕，盯着中间的黑圈
 
-Look at the black circle at center. Once one of two red circles turns green, glance to the another red circle immediately.
+一旦两个红圈之一变绿，立刻扫向另一个没变的红圈（头不要转动，仅仅转动眼球）
+
+Find a big monitor, look at the black circle at center. 
+
+Once one of two red circles turns green, glance to the another red circle immediately. (Fix your head, just move your eye)
 
 ## Explain
 
